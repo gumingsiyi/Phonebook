@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+  </component>
+  <component name="JSHintConfiguration" version="2.7.0" use-config-file="false">
+    <option asi="true" />
+    <option bitwise="true" />
+    <option boss="true" />
+    <option browser="true" />
+    <option browserify="true" />
+    <option camelcase="true" />
+    <option couch="true" />
+    <option curly="true" />
+    <option debug="true" />
+    <option devel="true" />
+    <option dojo="true" />
+    <option elision="true" />
+    <option enforceall="true" />
+    <option eqeqeq="true" />
+    <option eqnull="true" />
+    <option es3="true" />
+    <option es5="true" />
+    <option esnext="true" />
+    <option evil="true" />
+    <option expr="true" />
+    <option forin="true" />
+    <option freeze="true" />
+    <option funcscope="true" />
+    <option futurehostile="true" />
+    <option gcl="true" />
+    <option globalstrict="true" />
+    <option immed="true" />
+    <option iterator="true" />
+    <option jasmine="true" />
+    <option jquery="true" />
+    <option lastsemic="true" />
+    <option latedef="false" />
+    <option laxbreak="true" />
+    <option laxcomma="true" />
+    <option loopfunc="true" />
+    <option maxerr="50" />
+    <option mocha="true" />
+    <option mootools="true" />
+    <option moz="true" />
+    <option multistr="true" />
+    <option newcap="true" />
+    <option noarg="true" />
+    <option nocomma="true" />
+    <option node="true" />
+    <option noempty="true" />
+    <option nomen="true" />
+    <option nonbsp="true" />
+    <option nonew="true" />
+    <option nonstandard="true" />
+    <option notypeof="true" />
+    <option noyield="true" />
+    <option onevar="true" />
+    <option passfail="true" />
+    <option phantom="true" />
+    <option plusplus="true" />
+    <option proto="true" />
+    <option prototypejs="true" />
+    <option qunit="true" />
+    <option quotmark="false" />
+    <option rhino="true" />
+    <option scripturl="true" />
+    <option shadow="true" />
+    <option shelljs="true" />
+    <option singleGroups="true" />
+    <option smarttabs="true" />
+    <option strict="true" />
+    <option sub="true" />
+    <option supernew="true" />
+    <option trailing="true" />
+    <option typed="true" />
+    <option undef="true" />
+    <option unused="false" />
+    <option validthis="true" />
+    <option white="true" />
+    <option withstmt="true" />
+    <option worker="true" />
+    <option wsh="true" />
+    <option yui="true" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Android</id>
+          </State>
+          <State>
+            <id>Android Lint</id>
+          </State>
+          <State>
+            <id>Bitwise operation issuesJava</id>
+          </State>
+          <State>
+            <id>Bitwise operation issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Control flow issuesJava</id>
+          </State>
+          <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>CorrectnessLintAndroid</id>
+          </State>
+          <State>
+            <id>DOM issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Error handlingJava</id>
+          </State>
+          <State>
+            <id>GSPGrailsGroovy</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>Gradle</id>
+          </State>
+          <State>
+            <id>GrailsGroovy</id>
+          </State>
+          <State>
+            <id>Groovy</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>LintAndroid</id>
+          </State>
+          <State>
+            <id>Numeric issuesJava</id>
+          </State>
+          <State>
+            <id>Packaging issuesJava</id>
+          </State>
+          <State>
+            <id>Performance issuesJava</id>
+          </State>
+          <State>
+            <id>Plugin DevKit</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsGroovy</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsGradle</id>
+          </State>
+          <State>
+            <id>SQL</id>
+          </State>
+          <State>
+            <id>SetupSpring CoreSpring</id>
+          </State>
+          <State>
+            <id>Spring</id>
+          </State>
+          <State>
+            <id>Spring CoreSpring</id>
+          </State>
+          <State>
+            <id>Spring IntegrationSpring</id>
+          </State>
+          <State>
+            <id>Threading issuesGroovy</id>
+          </State>
+          <State>
+            <id>Threading issuesJava</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" default="true" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
