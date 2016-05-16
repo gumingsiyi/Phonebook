@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/name"
+            android:id="@+id/show_name"
             android:layout_marginLeft="30dp" android:layout_marginRight="30dp"/>
     <TextView
             android:layout_width="match_parent"
@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:inputType="phone"
             android:ems="10"
-            android:id="@+id/phoneNum" android:layout_marginRight="30dp" android:layout_marginLeft="30dp"/>
+            android:id="@+id/show_phoneNum" android:layout_marginRight="30dp" android:layout_marginLeft="30dp"/>
     <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -40,14 +40,32 @@
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
             android:ems="10"
-            android:id="@+id/email" android:layout_marginLeft="30dp" android:layout_marginRight="30dp"/>
-    <Button
+            android:id="@+id/show_email" android:layout_marginLeft="30dp" android:layout_marginRight="30dp"/>
+    <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="确  认"
-            android:textColor="#ffffff"
-            android:textSize="20dp"
-            android:background="@drawable/btn_shape_blue"
-            android:id="@+id/submit" android:layout_gravity="center_horizontal" android:layout_margin="30dp"/>
+            android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+        <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="修改"
+                android:textColor="#000000"
+                android:textSize="19sp"
+                android:background="@drawable/btn_shape_yellow"
+                android:id="@+id/button" android:layout_marginLeft="30dp" android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"/>
+        <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="删除"
+                android:textColor="#ffffff"
+                android:textSize="19sp"
+                android:background="@drawable/btn_shape_red"
+                android:id="@+id/button2" android:layout_marginLeft="15dp" android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"/>
+    </LinearLayout>
 
 </LinearLayout>

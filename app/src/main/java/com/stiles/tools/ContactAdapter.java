@@ -1,6 +1,8 @@
 package com.stiles.tools;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import com.stiles.model.ContactBean;
 import com.stiles.phonebook.R;
+import com.stiles.phonebook.ShowContactActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,6 +23,7 @@ import java.util.List;
 public class ContactAdapter extends BaseAdapter implements SectionIndexer {
     private List<ContactBean> data;
     private Context mContext;
+    private int id;
 
     public ContactAdapter(List<ContactBean> data, Context context) {
         if (data == null) {
@@ -40,6 +44,7 @@ public class ContactAdapter extends BaseAdapter implements SectionIndexer {
     public View getView(int position, View view, ViewGroup viewGroup) {
         ViewHolder viewHolder;
         ContactBean contactBean = data.get(position);
+        id = contactBean.getId();
         if (view == null) {
             viewHolder = new ViewHolder();
             view = LayoutInflater.from(mContext).inflate(R.layout.contact_item, null);
@@ -49,7 +54,10 @@ public class ContactAdapter extends BaseAdapter implements SectionIndexer {
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Toast.makeText(mContext, "hello",Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent();
+                    intent.putExtra("id", id);
+                    intent.setClass(mContext, ShowContactActivity.class);
+                    mContext.startActivity(intent);
                 }
             });
         } else {

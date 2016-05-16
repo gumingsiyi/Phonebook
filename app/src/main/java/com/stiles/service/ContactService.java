@@ -58,4 +58,27 @@ public class ContactService {
 
         return list;
     }
+
+    //根据id查找
+    public ContactBean findById(int id) {
+        ContactBean bean = null;
+        Cursor cursor = Rdb.query(DatabaseHelper.TABLENAME, null, "id=?", new String[]{String.valueOf(id)}, null, null, null);
+
+        int nameIndex = cursor.getColumnIndex(DatabaseHelper.NAME);
+        int phoneNumIndex = cursor.getColumnIndex(DatabaseHelper.PHONENUM);
+        int emailIndex = cursor.getColumnIndex(DatabaseHelper.EMAIL);
+
+        String name;
+        String phoneNum;
+        String email;
+
+        for (cursor.moveToFirst(); !cursor.isAfterLast(); cursor.moveToNext()) {
+            name = cursor.getString(nameIndex);
+            phoneNum = cursor.getString(phoneNumIndex);
+            email = cursor.getString(emailIndex);
+            bean = new ContactBean(id, name, phoneNum, email);
+        }
+        cursor.close();
+        return bean;
+    }
 }

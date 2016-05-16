@@ -104,18 +104,15 @@ public class MainActivity extends AppCompatActivity {
         for (ContactBean aData : data) {
             String pinyin = PinyinUtils.getPinyin(aData.getName());
             String Fpinyin = pinyin.substring(0, 1).toUpperCase();
-
-            ContactBean person = new ContactBean();
-            person.setName(aData.getName());
-            person.setPinYin(pinyin);
+            aData.setPinYin(pinyin);
             // 正则表达式，判断首字母是否是英文字母
             if (Fpinyin.matches("[A-Z]")) {
-                person.setFirstPinYin(Fpinyin);
+                aData.setFirstPinYin(Fpinyin);
             } else {
-                person.setFirstPinYin("#");
+                aData.setFirstPinYin("#");
             }
 
-            list.add(person);
+            list.add(aData);
         }
 
         return list;
