@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.SectionIndexer;
 import android.widget.TextView;
+import android.widget.Toast;
 import com.stiles.model.ContactBean;
 import com.stiles.phonebook.R;
 
@@ -17,9 +18,8 @@ import java.util.List;
  * Created by stiles on 16/5/9.
  */
 public class ContactAdapter extends BaseAdapter implements SectionIndexer {
-    List<ContactBean> data;
+    private List<ContactBean> data;
     private Context mContext;
-    LayoutInflater mInflater;
 
     public ContactAdapter(List<ContactBean> data, Context context) {
         if (data == null) {
@@ -30,7 +30,7 @@ public class ContactAdapter extends BaseAdapter implements SectionIndexer {
         mContext = context;
     }
 
-    public class ViewHolder {
+    private class ViewHolder {
         TextView nickname;
         TextView tag;
 
@@ -46,6 +46,12 @@ public class ContactAdapter extends BaseAdapter implements SectionIndexer {
             viewHolder.nickname = (TextView) view.findViewById(R.id.nickname);
             viewHolder.tag = (TextView) view.findViewById(R.id.tag);
             view.setTag(viewHolder);
+            view.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Toast.makeText(mContext, "hello",Toast.LENGTH_SHORT).show();
+                }
+            });
         } else {
             viewHolder = (ViewHolder) view.getTag();
         }
